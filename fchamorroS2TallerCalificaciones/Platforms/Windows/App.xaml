@@ -1,0 +1,8 @@
+﻿<maui:MauiWinUIApplication
+    x:Class="fchamorroS2TallerCalificaciones.WinUI.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:maui="using:Microsoft.Maui"
+    xmlns:local="using:fchamorroS2TallerCalificaciones.WinUI">
+
+</maui:MauiWinUIApplication>
