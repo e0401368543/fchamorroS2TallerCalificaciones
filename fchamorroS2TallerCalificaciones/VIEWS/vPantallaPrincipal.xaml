@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fchamorroS2TallerCalificaciones.VIEWS.vPantallaPrincipal"
+             Title="vPantallaPrincipal">
+    <ScrollView>
+        <VerticalStackLayout  Padding="20" Spacing="10">
+                <Label 
+                Text="SISTEMA DE CALIFICACIONES"
+                 FontSize="20"
+                 TextColor="Black"
+                 HorizontalOptions="Center"
+                />
+            <Label 
+                 Text="PARCIAL 1"
+                  FontSize="20"
+                  TextColor="Black"
+                  HorizontalOptions="Start"
+                 />
+
+            <Picker x:Name="pkEstudiantes" Title="ESTUDIANTES">
+                <Picker.Items>
+                    <x:String>Freddy</x:String>
+                    <x:String>Carlos</x:String>
+                    <x:String>José</x:String>
+                    <x:String>Francisco</x:String>
+                    <x:String>Javier</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Entry x:Name="txtSeguimiento"
+                  Placeholder="Ingresa N Seguimiento"
+                     Keyboard="Numeric"
+                     MaxLength="10"
+                />
+
+            <Entry x:Name="txtExamen"
+                   Placeholder="Ingresa N Exámen"
+                      Keyboard="Numeric"
+                      MaxLength="10"
+             />
+
+           
+
+            <Label x:Name="lParcial2"
+              Text=" PARCIAL 2"
+               FontSize="20"
+               TextColor="Black"
+               HorizontalOptions="Start"
+              />
+            <Entry x:Name="txtSeguimientoP2"
+                Placeholder="Ingresa N Seguimiento 2"
+                   Keyboard="Numeric"
+                   MaxLength="10"
+              />
+
+            <Entry x:Name="txtExamen2"
+                Placeholder="Ingresa N Exámen 2"
+                Keyboard="Numeric"
+                MaxLength="10"                
+                   />
+            <DatePicker x:Name="dpFecha" Format="mm/dd/yyyy">
+
+            </DatePicker>
+
+            <Button x:Name="btnCalcular"
+                Text="Calcular Notas del Estudiante "
+                Clicked="btnCalcular_Clicked"/>
+            
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+    
+</ContentPage>
