@@ -34,7 +34,7 @@
                      MaxLength="10"
                 />
 
-            <Entry x:Name="txtExamen"
+            <Entry  x:Name="txtExamen"
                    Placeholder="Ingresa N Exámen"
                       Keyboard="Numeric"
                       MaxLength="10"
