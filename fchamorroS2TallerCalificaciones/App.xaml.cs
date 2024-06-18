@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new VIEWS.vPantallaPrincipal();
+            MainPage = new NavigationPage( new VIEWS.Login1());
         }
     }
 }

@@ -8,13 +8,19 @@
                 <Label 
                 Text="SISTEMA DE CALIFICACIONES"
                  FontSize="20"
-                 TextColor="Black"
+                 TextColor="DarkSlateBlue"
                  HorizontalOptions="Center"
                 />
+            <Label x:Name="lblNombre"
+  
+             HorizontalTextAlignment="End"
+             FontSize="15"
+             TextColor="Red"/>
+            
             <Label 
                  Text="PARCIAL 1"
                   FontSize="20"
-                  TextColor="Black"
+                  TextColor="LightSlateGray"
                   HorizontalOptions="Start"
                  />
 

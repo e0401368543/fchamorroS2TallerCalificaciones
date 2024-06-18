@@ -4,10 +4,16 @@ namespace fchamorroS2TallerCalificaciones.VIEWS;
 
 public partial class vPantallaPrincipal : ContentPage
 {
-	public vPantallaPrincipal()
+
+    public vPantallaPrincipal() {
+        InitializeComponent();
+    } 
+	public vPantallaPrincipal(string nombre)
 	{
 		InitializeComponent();
-	}
+        lblNombre.Text = "Bienvenido: " + nombre;
+
+    }
 
     private void btnCalcular_Clicked(object sender, EventArgs e)
     {
