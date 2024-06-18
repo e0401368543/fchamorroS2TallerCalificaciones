@@ -32,16 +32,30 @@ public partial class Login1 : ContentPage
     private void btnIngreso_Clicked(object sender, EventArgs e)
     {
         int i = 0;
-        
-        while (txtUsaurio.Text != users[i] && i< users.Length-1)
+
+        if (string.IsNullOrEmpty(txtUsaurio.Text) || string.IsNullOrEmpty(txtContraseña.Text))
         {
-          //  DisplayAlert("Alerta", "Usuario no existe"+ users[i]+" :pos: " +i, "Ok");
+            DisplayAlert("Alerta", "Ingrese el usuario/contraseña" + users.Length, "Cancel");
+            return;
+        }
 
-            if (i == users.Length-1) {
-                DisplayAlert("Alerta", "Usuario no existe", "Ok");
-                }
 
-            i += 1;
+        while (i< users.Length)
+        {
+
+          
+            //  DisplayAlert("Alerta", "Usuario no existe"+ users[i]+" :pos: " +i, "Ok");
+
+            
+            if (txtUsaurio.Text != users[i])
+                i += 1;
+
+        }
+
+        if (i == users.Length)
+        {
+            DisplayAlert("Alerta", "Usuario no existe", "Ok");
+            return;
         }
 
         if (txtUsaurio.Text == users[i])
